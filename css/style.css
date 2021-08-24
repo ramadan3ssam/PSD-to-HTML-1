@@ -1,0 +1,516 @@
+/***************** main rules********************/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+h2,
+h3 {
+    text-transform: uppercase;
+    color: #222;
+    margin: 0;
+}
+
+p,
+q {
+    line-height: 1.7;
+    color: #888;
+    margin: 0;
+}
+
+hr {
+    border-top: 1px solid #999;
+    margin: 10px 0 20px;
+}
+
+button {
+    margin-left: 40px;
+    margin-top: 20px;
+    background: none;
+    padding: 15px;
+    color: #2ecc71;
+    border: 3px solid #2ecc71;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transition: all .5s ease-in-out;
+    background-color: #2ecc71;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #2ecc71;
+    cursor: pointer;
+}
+
+
+/****** My Framework ******/
+
+.clear-fix {
+    clear: both;
+}
+
+.fl-left {
+    float: left;
+}
+
+
+/******************** Header ********************/
+
+header .slider {
+    overflow: hidden;
+    text-align: center;
+    background-image: url('../images/intro.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 200px;
+}
+
+header .slider .intro {
+    padding-top: 25%;
+    color: #FFF;
+}
+
+header .slider h2 {
+    margin: 0 auto 5%;
+    padding: 10px 0;
+    font-size: 50px;
+    color: #FFF;
+    border-top: 3px solid #FFF;
+    border-bottom: 3px solid #FFF;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+}
+
+header .slider button {
+    color: #FFF;
+    border: 2px solid #FFF;
+    width: 150px;
+}
+
+header .slider button:hover {
+    background: #fff;
+    color: #555;
+}
+
+header.slider .container {
+    text-align: center;
+}
+
+nav {
+    background-color: #252f31;
+    color: #FFF;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav h2 {
+    float: left;
+    color: #FFF;
+    margin: 1rem 0;
+}
+
+nav h2 span {
+    color: #2ecc71;
+}
+
+nav ul {
+    float: right;
+    padding: 5px;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li.active a {
+    color: #2ecc71;
+}
+
+
+/******************** Features ********************/
+
+.features {
+    padding-top: 40px;
+    padding-bottom: 50px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    overflow: hidden;
+}
+
+.features .feat {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 33.33333%;
+    padding-bottom: 10px;
+}
+
+.features .feat h2 {
+    text-align: center;
+}
+
+.features .feat p {
+    text-align: center;
+}
+
+
+/******************** About me ********************/
+
+.about-me {
+    background-color: #F2F2F2;
+    overflow: hidden;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.about-me .image {
+    width: 40%;
+}
+
+.about-me .image img {
+    width: 100%;
+}
+
+.about-me .info {
+    width: 60%;
+    padding-left: 40px;
+    padding-top: 25px;
+}
+
+.about-me .info>p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.about-me .info .info-holder {
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.about-me .info .info-holder>div {
+    width: 50%;
+    min-height: 6rem;
+    overflow: hidden;
+}
+
+.about-me .info .info-holder>div .icon {
+    width: 12%;
+    margin-right: 5%;
+}
+
+.about-me .info .info-holder>div .icon i {
+    margin-top: 25px;
+    color: #2ecc71;
+}
+
+.about-me .info .info-holder>div .content {
+    width: 83%;
+}
+
+.about-me .info .info-holder>div .content h3 {
+    margin-bottom: 5px;
+}
+
+
+/******************** Skills ********************/
+
+.skills {
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.skills .my-skills {
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+
+.skills .my-skills p:not(p:last-of-type) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skills .my-skills button {
+    margin-top: 20px;
+}
+
+.skills .my-progress {
+    width: 50%;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+.skills .my-progress .bar-content {
+    width: 90%;
+}
+
+.skills .my-progress .bar-content div {
+    height: 1.5%;
+    background-color: #eee;
+}
+
+.skills .my-progress .bar-content span {
+    height: 100%;
+    background-color: #2ecc71;
+    color: #fff;
+    display: block;
+    text-align: right;
+    line-height: 25px;
+}
+
+.skills .my-progress h3 {
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+
+/******************** Resume ********************/
+
+.resume {
+    background-color: #F2F2F2;
+}
+
+.resume .container {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.resume p {
+    padding: 10px 20px;
+    margin-bottom: 35px;
+}
+
+
+/******************** Education ********************/
+
+.educations {
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.educations .my-educations {
+    width: 50%;
+    padding-left: 40px;
+}
+
+.educations .experience {
+    width: 45%;
+    padding-left: 5%;
+}
+
+.educations .experience div h3 {
+    margin-top: 2rem;
+    margin-bottom: 10px;
+}
+
+.educations .experience div span {
+    display: block;
+    color: #555;
+}
+
+.educations .experience div button {
+    color: #FFF;
+    background-color: #2ecc71;
+    padding: 10px 15px 5px;
+    margin: 10px 0;
+    border: none;
+    cursor: default;
+}
+
+
+/******************** Testemonial ********************/
+
+.testimonial {
+    background-color: #F2F2F2;
+}
+
+.testimonial .container {
+    text-align: center;
+    padding: 60px 40px 30px;
+}
+
+.testimonial q {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.testimonial h3 {
+    margin-top: 16px;
+}
+
+.testimonial ul li {
+    height: 10px;
+    width: 10px;
+    background-color: #888;
+    border-radius: 50%;
+}
+
+.testimonial ul li.active {
+    background-color: #2ecc71;
+}
+
+.testimonial ul li:hover {
+    background-color: #2ecc71;
+    cursor: pointer;
+}
+
+
+/******************** Porofolio ********************/
+
+.portofolio {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.portofolio p {
+    padding: 10px 40px 30px;
+}
+
+.portofolio .container .images img {
+    width: 31.3333%;
+    margin: 10px;
+    padding: 3px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    box-shadow: 15px 15px 5px -10px rgba(3, 3, 3, 0.22)
+}
+
+
+/******************** Contact ME ********************/
+
+.contact-me {
+    background-color: #252F31;
+    color: #FFF;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    padding-left: 40px;
+    overflow: hidden;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+}
+
+.contact-me .contact-info {
+    width: 50%;
+}
+
+.contact-me .contact-info h2 {
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.contact-me .contact-info p {
+    color: #6A6E71;
+    margin-bottom: 20px;
+}
+
+.contact-me .contact-info address {
+    color: #888;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.contact-me .contact-info span {
+    color: #888;
+}
+
+.contact-me .contact-info strong {
+    color: #d1d6da;
+}
+
+.contact-me .contact-box {
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 45%;
+}
+
+.contact-me .contact-box input:not([type="button"]),
+.contact-me .contact-box textarea {
+    margin-bottom: 10px;
+    background-color: #6a6e71;
+    width: 60%;
+    height: 30px;
+    color: #FFF;
+    outline: none;
+}
+
+.contact-me .contact-box input[type="button"] {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #191E22;
+    color: #eee;
+}
+
+.contact-me .contact-box input[type="button"]:hover {
+    cursor: pointer;
+}
+
+.contact-me .contact-box input[type="button"]:active {
+    position: relative;
+    top: 1px;
+}
+
+.contact-me .contact-box label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-me .contact-box textarea {
+    width: 200px;
+    height: 200px;
+    max-height: 200px;
+    min-width: 60%;
+    display: block;
+    resize: none;
+}
+
+
+/******************** Footer ********************/
+
+footer {
+    background-color: #191E22;
+    color: #6a6e71;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+footer ul li {
+    margin: 10px 10px 0;
+}
